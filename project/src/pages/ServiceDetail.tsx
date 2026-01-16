@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, MessageCircle, Check, Users, Clock } from 'lucide-react';
 import { servicesData } from '../types/services';
+import ReviewsSection from '../components/ReviewsSection';
 
 export default function ServiceDetail() {
   const { id } = useParams();
@@ -251,6 +252,14 @@ export default function ServiceDetail() {
           </motion.div>
         </div>
       </section>
+
+      <ReviewsSection
+        productId={service.id}
+        productName={service.name}
+        averageRating={4.9}
+        totalReviews={Math.floor(Math.random() * 150) + 80}
+        theme="service"
+      />
     </div>
   );
 }
