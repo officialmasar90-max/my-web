@@ -24,7 +24,7 @@ interface ReviewsSectionProps {
 const mockReviews: Review[] = [
   {
     id: '1',
-    userName: 'Ahmad Rifai',
+    userName: 'Ahmad Misbahuddin',
     rating: 5,
     comment: 'Kualitas produknya luar biasa! Sangat memuaskan dan sesuai ekspektasi. Pengiriman juga cepat. Recommended banget!',
     date: '2026-01-15',
